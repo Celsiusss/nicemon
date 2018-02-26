@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Payments
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item *ngFor="let payment of payments | async">
+      <h2><strong>{{payment.time + '000' | date:'MMMM d, h:mm a'}}</strong></h2>
+      <span class="type">{{payment.type == 0 ? 'Standard' : 'Coinbase'}}</span>
+      <table>
+        <tr>
+          <td class="theader">Amount</td>
+          <td class="theader">Fee</td>
+        </tr>
+        <tr>
+          <td width="50%" class="tbody">
+            <span class="accepted">{{payment.amount}}</span>
+            <span class="speed">BTC</span>
+          </td>
+          <td class="tbody">
+            <span class="rejected">{{payment.fee}}</span>
+            <span class="speed">BTC</span>
+          </td>
+        </tr>
+      </table>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>

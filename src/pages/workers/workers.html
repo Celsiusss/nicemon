@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Workers</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item *ngFor="let worker of workers">
+      <h2><strong>{{worker[0]}}</strong></h2>
+      <span class="algorithm">{{stats.algos[worker[6]].name}}</span>
+      <table>
+        <tr>
+          <td class="theader">Accepted</td>
+          <td class="theader">Rejected</td>
+        </tr>
+        <tr>
+          <td width="50%" class="tbody">
+            <span class="accepted">{{worker[1].a || 0}}</span>
+            <span class="speed">{{stats.algos[worker[6]].suffix}}/s</span>
+          </td>
+          <td class="tbody">
+            <span class="rejected">{{worker[1].r || 0}}</span>
+            <span class="speed">{{stats.algos[worker[6]].suffix}}/s</span>
+          </td>
+        </tr>
+      </table>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

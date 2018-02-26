@@ -1,0 +1,23 @@
+page-profits {
+
+  .highcharts-credits {
+    display: none;
+  }
+
+  .highcharts-button {
+    text {
+      font-size: 16px;
+    }
+  }
+
+  .highcharts-range-selector-buttons {
+    text[x="10"] {
+      display: none;
+    }
+  }
+
+  .highcharts-input-group{
+    display: none;
+  }
+
+}

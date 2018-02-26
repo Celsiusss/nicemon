@@ -1,0 +1,45 @@
+page-about {
+
+  h2 {
+    font-weight: 100;
+    float: left;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  tr {
+    width: 50%;
+  }
+
+  .theader {
+    font-size: small;
+  }
+
+  .tbody {
+    color: #4d4d4d;
+  }
+
+  //.accepted {
+  //  color: #2ec95c;
+  //}
+  //
+  //.rejected {
+  //  color: #e13838;
+  //}
+
+  .speed {
+    font-size: 12px;
+  }
+
+  .type {
+    font-size: small;
+    margin-bottom: 10px;
+    color: #8c8c8c;
+    padding-right: 4px;
+    position: absolute;
+    right: 0;
+  }
+
+}

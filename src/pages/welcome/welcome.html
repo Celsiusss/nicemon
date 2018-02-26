@@ -1,0 +1,21 @@
+<div class="bg"></div>
+
+<div class="logotext">
+  <span class="part1">NICE</span><span class="part2">MON</span>
+</div>
+
+<ion-card>
+  <ion-card-header>
+    Login
+  </ion-card-header>
+  <ion-card-content>
+    <p>Your Payout Address</p>
+
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <input name="address" type="text" placeholder="Address" required minlength="26" maxlength="35" ngModel>
+      <button type="submit" ion-button block large>Submit</button>
+    </form>
+
+  </ion-card-content>
+</ion-card>
+
