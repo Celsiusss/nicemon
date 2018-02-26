@@ -76,6 +76,9 @@ export class ProfitsPage implements OnInit{
             chart: {
               type: 'area'
             },
+            credits: {
+              enabled: false
+            },
             title: {
               text: this.profitability.toFixed(8) + ' BTC / day'
             },
